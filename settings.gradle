@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "JavaHello"
 include ':app'
+include ':myapplication'
+include ':myapplication:lib'

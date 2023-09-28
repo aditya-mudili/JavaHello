@@ -23,6 +23,7 @@
         android:textColor="@color/white"
         android:textSize="50sp"
 
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,9 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="32dp"
-        android:textSize="25dp"
-        android:textColor="@color/white"
         android:text="@string/from_aditya"
+        android:textColor="@color/white"
+        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,11 +47,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="25dp"
-        android:textSize="25dp"
-        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"
         android:text="@string/to_veerender"
+        android:textColor="@color/white"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageRoll" />
+
+    <ImageView
+        android:id="@+id/imageRoll"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="404dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice_1" />
+
+    <Button
+        android:id="@+id/btnRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="25dp"
+        android:text="Roll"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/text_roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="51dp"
+        android:text="TextView"
+        android:textColor="#FAF8F8"
+        android:textColorHint="#FFFEFE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/btnRoll"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
